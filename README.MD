@@ -30,8 +30,14 @@
 
 # How to test 
 
-  I have provided posman collection that you can use for test application.
-  you can connect to DB to view the data directly.
+  I have provided posman collection that you can use for test application or you try to run integration test by.
+
+```
+ mvn clean test -Pintegration;
+```
+
+
+  Also you can connect to DB to view the data directly.
 
    ## h2 
 
@@ -43,7 +49,7 @@
 
   ## mysql 
 
-   1 connect to  localhost:3306
+   connect to  localhost:3306
    
    ```
    usename: root
