@@ -1,4 +1,4 @@
-package com.webon.client;
+package com.shop.client;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

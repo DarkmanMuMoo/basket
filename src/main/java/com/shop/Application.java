@@ -1,4 +1,4 @@
-package com.webon;
+package com.shop;
 
 import java.util.Arrays;
 

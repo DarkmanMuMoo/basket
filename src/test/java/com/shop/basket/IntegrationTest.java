@@ -1,4 +1,4 @@
-package com.webon.basket;
+package com.shop.basket;
 
 public interface IntegrationTest {
 

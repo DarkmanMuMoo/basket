@@ -1,4 +1,4 @@
-package com.webon.client;
+package com.shop.client;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

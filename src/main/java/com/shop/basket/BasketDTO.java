@@ -1,8 +1,8 @@
-package com.webon.basket;
+package com.shop.basket;
 
 import java.util.List;
 
-import com.webon.product.ProductDTO;
+import com.shop.product.ProductDTO;
 
 public class BasketDTO {
 

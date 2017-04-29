@@ -1,11 +1,13 @@
-package com.webon.client;
+package com.shop.client;
+
+import static com.shop.exception.APIException.internalError;
 
 import java.io.IOException;
-import static com.webon.exception.APIException.internalError;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.webon.exception.APIException;
+import com.shop.exception.APIException;
 
 import retrofit2.Call;
 import retrofit2.Response;

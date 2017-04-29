@@ -1,4 +1,4 @@
-package com.webon.product;
+package com.shop.product;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

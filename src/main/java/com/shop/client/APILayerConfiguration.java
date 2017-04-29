@@ -1,4 +1,4 @@
-package com.webon.client;
+package com.shop.client;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

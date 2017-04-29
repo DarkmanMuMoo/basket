@@ -1,4 +1,4 @@
-package com.webon.exception;
+package com.shop.exception;
 
 import java.util.HashMap;
 import java.util.Map;

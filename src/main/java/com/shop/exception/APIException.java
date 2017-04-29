@@ -1,4 +1,4 @@
-package com.webon.exception;
+package com.shop.exception;
 
 import org.springframework.http.HttpStatus;
 

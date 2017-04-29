@@ -1,18 +1,19 @@
-package com.webon.basket;
+package com.shop.basket;
 
+import static com.shop.exception.APIException.badRequest;
+import static com.shop.exception.APIException.notFound;
 import static java.util.stream.Collectors.toList;
-import static com.webon.exception.APIException.notFound;
-import static com.webon.exception.APIException.badRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.webon.client.ValidationService;
-import com.webon.exception.APIException;
-import com.webon.product.Product;
-import com.webon.product.ProductDTO;
-import com.webon.product.ProductRepository;
+import com.shop.client.ValidationService;
+import com.shop.exception.APIException;
+import com.shop.product.Product;
+import com.shop.product.ProductDTO;
+import com.shop.product.ProductRepository;
 
 @Service
 @Transactional

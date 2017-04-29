@@ -1,4 +1,4 @@
-package com.webon.product;
+package com.shop.product;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;

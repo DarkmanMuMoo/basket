@@ -1,4 +1,4 @@
-package com.webon.basket;
+package com.shop.basket;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -21,8 +21,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.webon.exception.APIException;
-import com.webon.product.ProductDTO;
+import com.shop.exception.APIException;
+import com.shop.product.ProductDTO;
 
 @RestController
 @RequestMapping("basket")

@@ -1,4 +1,4 @@
-package com.webon.product;
+package com.shop.product;
 
 public class Product {
 

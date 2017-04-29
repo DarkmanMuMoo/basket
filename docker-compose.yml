@@ -10,6 +10,6 @@ services:
         ports:
              - 3306:3306
     basket:
-        image: webon/basket
+        image: shop/basket
         ports:
              - 8080:8080

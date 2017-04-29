@@ -1,4 +1,4 @@
-package com.webon.basket;
+package com.shop.basket;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -24,9 +24,11 @@ import org.springframework.test.jdbc.JdbcTestUtils;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 
-import com.webon.product.Product;
-import com.webon.product.ProductDTO;
-import com.webon.product.ProductRepository;
+import com.shop.basket.BasketDTO;
+import com.shop.basket.BasketRepository;
+import com.shop.product.Product;
+import com.shop.product.ProductDTO;
+import com.shop.product.ProductRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
