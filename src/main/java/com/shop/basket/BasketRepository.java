@@ -1,6 +1,7 @@
 package com.shop.basket;
 
 import java.sql.Statement;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -21,6 +22,11 @@ public class BasketRepository {
 		this.template = template;
 	}
 
+	public List<Basket> list(){
+		
+		return template.query("select * from basket ", new BeanPropertyRowMapper<Basket>(Basket.class));
+		
+	}
 	public Long insert() {
 		KeyHolder holder = new GeneratedKeyHolder();
 		template.update(con -> con.prepareStatement(INSERT, Statement.RETURN_GENERATED_KEYS), holder);

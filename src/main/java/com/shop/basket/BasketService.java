@@ -4,6 +4,8 @@ import static com.shop.exception.APIException.badRequest;
 import static com.shop.exception.APIException.notFound;
 import static java.util.stream.Collectors.toList;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -37,9 +39,13 @@ public class BasketService {
 		return basketRepository.insert();
 	}
 
+	public List<BasketDTO> list(){
+		return basketRepository.list().stream().map(b -> new BasketDTO(b.getId())).collect(toList());
+	}
 	public BasketDTO get(Long id) throws APIException {
 		checkExist(id);
 		BasketDTO dto = new BasketDTO();
+		dto.setId(id);
 		dto.setProductList(productRepository.getBasketProduct(id).stream()
 				.map(p -> new ProductDTO(p.getProductId(), p.getQuantity())).collect(toList()));
 		return dto;

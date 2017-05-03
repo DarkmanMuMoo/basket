@@ -3,6 +3,7 @@ package com.shop.basket;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
@@ -50,6 +51,10 @@ public class BasketController {
 	public BasketDTO get(@PathVariable Long id) throws APIException {
 		return basketService.get(id);
 
+	}
+	@GetMapping
+	public List<BasketDTO> list() throws APIException {
+		return basketService.list();
 	}
 
 	@DeleteMapping("{id}")
